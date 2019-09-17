@@ -15,6 +15,8 @@ Basically, for a static page all you need is to updload the files to your host
 and add the part between before the end of the head in static pages: 
 ```
     <!-- DIGITAL KLIMA STRIKE START-->
-    <!-- DIGITAL KLIMA STRIKE ENDS-->```
+    <!-- DIGITAL KLIMA STRIKE ENDS-->
+```
 that is between those lines. See index.html file as example. 
 
+You can also check the demo.html for another example of a static page. 
