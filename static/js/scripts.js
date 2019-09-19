@@ -148,8 +148,7 @@
                 T.websiteName && (n = T.websiteName, document.querySelector(".dcs-website-name__default").style.display = "none",
                     document.querySelector(".dcs-website-name__prefix").style.display = "inline-block",
                     document.querySelector(".dcs-website-name").innerHTML = decodeURI(n)),
-                void
-                    x && (s || (s = !0, postMessageToParentIFrameContainer("maximize"),
+                x && (s || (s = !0, postMessageToParentIFrameContainer("maximize"),
                     document.querySelector(".dcs-footer").style.display = "none",
                     document.querySelector(".dcs-full-page").style.display = "flex"))
                 var E = y(j, u),

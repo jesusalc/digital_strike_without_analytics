@@ -1,4 +1,4 @@
-// (function() {
+(function() {
   'use strict';
   var DOM_ID = 'DIGITAL_CLIMATE_STRIKE';
   var CLOSED_COOKIE = '_DIGITAL_CLIMATE_STRIKE_WIDGET_CLOSED_';
@@ -16,11 +16,9 @@
   var alwaysShowWidget = !!(options.alwaysShowWidget || window.location.hash.indexOf('ALWAYS_SHOW_DIGITAL_CLIMATE_STRIKE') !== -1);
   var showCloseButtonOnFullPageWidget = !!options.showCloseButtonOnFullPageWidget;
   var language = getLanguage();
-console.log(language)
   function getIframeSrc() {
     var src = iframeHost;
     src += language === 'en' ? '/index-en.html?' : '/index-' + language + '.html?';
-    console.log(src)
     var urlParams = [
       ['hostname', window.location.host],
       ['fullPageDisplayStartDate', fullPageDisplayStartDate.toISOString()],
@@ -110,6 +108,7 @@ console.log(language)
   function maximize() {
     document.getElementById(DOM_ID).style.width = '100%';
     document.getElementById(DOM_ID).style.height = '100%';
+    document.getElementById(DOM_ID).style.bottom = '0';
   }
 
   function closeWindow() {
@@ -228,4 +227,4 @@ console.log(language)
     default:
       document.addEventListener('DOMContentLoaded', initializeInterface);
   }
-// })();
+})();
